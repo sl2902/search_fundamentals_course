@@ -122,11 +122,12 @@ def index_file(file, index_name):
         docs.append(the_doc)
         docs_indexed += 1
         if docs_indexed % 2000 == 0:
-            bulk(index_name, docs)
+            bulk(client, docs)
+            docs = []
             return docs_indexed
     
     if docs:
-        bulk(index_name, docs)
+        bulk(client, docs)
 
     return docs_indexed
 
