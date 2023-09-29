@@ -124,7 +124,7 @@ def index_file(file, index_name):
         if docs_indexed % 2000 == 0:
             bulk(client, docs)
             docs = []
-            return docs_indexed
+            # return docs_indexed
     
     if docs:
         bulk(client, docs)
