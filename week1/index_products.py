@@ -137,7 +137,7 @@ def index_file(file, index_name):
 @click.option('--workers', '-w', default=8, help="The number of workers to use to process files")
 def main(source_dir: str, index_name: str, workers: int):
 
-    files = glob.glob(source_dir + "/products_0256_9999184200050033_to_999918640005004*.xml")
+    files = glob.glob(source_dir + "/products_0255_9999141300050003_to_999918420005003*.xml")
     # files = source_dir + "/products_0256_9999184200050033_to_9999186400050044.xml"
     docs_indexed = 0
     start = perf_counter()
