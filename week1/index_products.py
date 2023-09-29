@@ -141,7 +141,7 @@ def main(source_dir: str, index_name: str, workers: int):
     # files = source_dir + "/products_0256_9999184200050033_to_9999186400050044.xml"
     docs_indexed = 0
     start = perf_counter()
-    docs_indexed = index_file(files, index_name)
+    # docs_indexed = index_file(files, index_name)
     with concurrent.futures.ProcessPoolExecutor(max_workers=workers) as executor:
         futures = [executor.submit(index_file, file, index_name) for file in files]
         for future in concurrent.futures.as_completed(futures):
