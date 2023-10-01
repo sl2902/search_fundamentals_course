@@ -113,12 +113,19 @@ def create_query(user_query, filters, sort="_score", sortDir="desc"):
     query_obj = {
         "size": 10,
         "query": {
-                "query_string": {
-                            "query": user_query,
-                            "fields": ["name^100", "shortDescription^50", "longDescription^10", "department"],
-                            "phrase_slop": 3
-        },
-        "filter": filters
+            "bool": [
+                {
+                    "must": {
+                                "query_string": {
+                                            "query": user_query,
+                                            "fields": ["name^100", "shortDescription^50", "longDescription^10", "department"],
+                                            "phrase_slop": 3
+                        },
+                    }
+                }
+            ],  
+            "filter": filters
+            }
         },
         "aggs": {
             "regularPrice": {
