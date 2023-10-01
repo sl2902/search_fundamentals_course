@@ -125,7 +125,6 @@ def create_query(user_query, filters, sort="_score", sortDir="desc"):
                 }
             ],  
             "filter": filters
-            }
         },
         "aggs": {
             "regularPrice": {
@@ -160,18 +159,18 @@ def create_query(user_query, filters, sort="_score", sortDir="desc"):
                 "shortDescription": {},
                 "longDescription": {}
             }
-    },
-    sort : [
-         {
-            "regularPrice": {
-                "order": sortDir
-            }
         },
-        {
-            "name.keyword": {
-                "order": sortDir
+        sort : [
+            {
+                "regularPrice": {
+                    "order": sortDir
+                }
+            },
+            {
+                "name.keyword": {
+                    "order": sortDir
+                }
             }
-        }
-    ]
+        ]
   }
     return query_obj
