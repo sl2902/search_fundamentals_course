@@ -2,16 +2,6 @@
   "settings": {
     "index.refresh_interval": "5s"
   },
-"analyzer": {
-    "bbuy_english": {
-    "tokenizer":  "standard",
-    "filter": [
-        "lowercase",
-        "english_stop",
-        "english_stemmer"
-    ]
-    }
-},
 "mappings": {
     "dynamic": false,
     "properties": {
