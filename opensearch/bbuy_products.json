@@ -179,13 +179,7 @@
             }
         },
         "shortDescriptionHtml": {
-            "type": "text",
-            "fields" : {
-                "keyword" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-                }
-            }
+            "type": "keyword"
         },
         "class": {
             "type": "text",
@@ -236,13 +230,7 @@
             "type": "integer"
         },
         "bestBuyItemId": {
-            "type": "text",
-            "fields" : {
-                "keyword" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-                }
-            }
+            "type": "keyword"
         },
         "description": {
             "type": "text",
@@ -327,13 +315,7 @@
             }
         },
         "longDescriptionHtml": {
-            "type": "text",
-            "fields" : {
-                "keyword" : {
-                "type" : "keyword",
-                "ignore_above" : 256
-                }
-            }
+            "type": "keyword"
         },
         "features": {
             "type": "text",
