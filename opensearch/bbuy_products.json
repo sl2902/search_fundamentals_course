@@ -41,7 +41,7 @@
         },
         "name": {
             "type" : "text",
-            "analyzer": "bbuy_english",
+            "analyzer": "english",
             "fields" : {
                 "keyword" : {
                 "type" : "keyword",
@@ -192,7 +192,7 @@
         },
         "shortDescription": {
             "type": "text",
-            "analyzer": "bbuy_english",
+            "analyzer": "english",
             "fields" : {
                 "keyword" : {
                 "type" : "keyword",
@@ -346,7 +346,7 @@
         },
         "longDescription": {
             "type": "text",
-            "analyzer": "bbuy_english",
+            "analyzer": "english",
             "fields" : {
                 "keyword" : {
                 "type" : "keyword",
