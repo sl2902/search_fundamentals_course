@@ -160,11 +160,11 @@ def create_query(user_query, filters, sort="_score", sortDir="desc"):
                 "longDescription": {}
             }
         },
-        sort : [
+        "sort" : [
             {
-                "regularPrice": {
-                    "order": sortDir
-                }
+                sort:  {
+                            "order": sortDir
+                    }
             }
         ]
   }
