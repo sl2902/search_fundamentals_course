@@ -154,15 +154,15 @@ def create_query(user_query, filters, sort="_score", sortDir="desc"):
                 "longDescription": {}
             }
     },
-    "sort" : [
+    sort : [
          {
             "regularPrice": {
-                "order": "desc"
+                "order": sortDir
             }
         },
         {
             "name.keyword": {
-                "order": "desc"
+                "order": sortDir
             }
         }
     ]
