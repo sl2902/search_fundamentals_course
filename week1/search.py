@@ -136,7 +136,7 @@ def create_query(user_query, filters, sort="_score", sortDir="desc"):
                         {"key": "$$$", "from": 200, "to": 300},
                         {"key": "$$$$", "from": 300, "to": 400},
                         {"key": "$$$$$", "from": 400, "to": 500},
-                        {"key": "$$$$$$", "from": 500},
+                        {"key": "$$$$$$", "from": 500}
                     ]
                 }
             },
