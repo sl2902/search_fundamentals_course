@@ -94,10 +94,10 @@ def query():
     print("query obj: {}".format(query_obj))
 
     #### Step 4.b.ii
-    try:
-        response = opensearch.search(body=query_obj, index="bbuy_products")
-    except:
-        error = 999
+    # try:
+    response = opensearch.search(body=query_obj, index="bbuy_products")
+    # except:
+    #     error = 999
 
     #print(response)
     if error is None:

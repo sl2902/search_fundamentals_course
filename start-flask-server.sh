@@ -1,8 +1,8 @@
 # examples:
 # To start flask server for week 1
-# ./start-server.sh week1
+# ./start-flask-server.sh week1
 # To start flask server for week 2
-# ./start-server.sh week2
+# ./start-flask-server.sh week2
 
 pyenv activate search_fundamentals
 export FLASK_ENV=development
