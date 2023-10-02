@@ -37,8 +37,8 @@ def main(source_file: str, index_name: str):
     client = get_opensearch()
     ds = pd.read_csv(source_file)
     #print(ds.columns)
-    ds['click_time'] = pd.to_datetime(ds['click_time'], format="%Y-%m-%d %H:%M:%S")
-    ds['query_time'] = pd.to_datetime(ds['query_time'], format="%Y-%m-%d %H:%M:%S")
+    ds['click_time'] = pd.to_datetime(ds['click_time'], format="mixed")
+    ds['query_time'] = pd.to_datetime(ds['query_time'], format="mixed")
     #print(ds.dtypes)
     docs = []
     tic = time.perf_counter()
