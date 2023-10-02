@@ -290,19 +290,43 @@
             "type": "text"
         },
         "depth": {
-            "type": "float"
+            "type": "text",
+            "fields": {
+            "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+                }
+            }
         },
         "height": {
-            "type": "float"
+            "type": "text",
+            "fields": {
+            "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+                }
+            }
         },
         "weight": {
-            "type": "float"
+            "type": "text",
+            "fields": {
+            "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+                }
+            }
         },
         "shippingWeight": {
             "type": "float"
         },
         "width": {
-            "type": "float"
+            "type": "text",
+            "fields": {
+            "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+                }
+            }
         },
         "longDescription": {
             "type": "text",
