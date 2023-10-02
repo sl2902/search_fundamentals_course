@@ -129,7 +129,7 @@ def index_file(file, index_name):
     
     if docs:
         bulk(client, docs)
-
+        logger.info(f'{docs_indexed} documents indexed')
     return docs_indexed
 
 @click.command()
