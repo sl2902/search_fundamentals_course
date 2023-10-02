@@ -1,6 +1,7 @@
 # From Dmitiriy Shvadskiy https://github.com/dshvadskiy/search_with_machine_learning_course/blob/main/index_queries.py
 import click
 import pandas as pd
+import numpy as np
 from opensearchpy import OpenSearch
 from opensearchpy.helpers import bulk
 
